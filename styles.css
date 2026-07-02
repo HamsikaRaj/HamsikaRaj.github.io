@@ -200,6 +200,13 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; letter-spac
 .project:hover { border-color: var(--border-2); transform: translateY(-4px); box-shadow: var(--shadow); }
 .project:hover::before { opacity: 1; }
 .project.open { grid-column: 1 / -1; }
+
+/* Featured lead card: full width, richer treatment so 5 cards balance (1 + 2x2) */
+.projects > .project:first-child { grid-column: 1 / -1; padding: 34px 36px; }
+.projects > .project:first-child::before { opacity: 1; }
+.projects > .project:first-child .project__title { font-size: 1.75rem; }
+.projects > .project:first-child .project__oneline { font-size: 1.08rem; max-width: 780px; }
+.projects > .project:first-child .project__tag::after { content: '  ·  Featured'; color: var(--text-dim); }
 .project__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
 .project__tag { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-2); }
 .project__title { font-size: 1.35rem; margin: 10px 0 8px; }
