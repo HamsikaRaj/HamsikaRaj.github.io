@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamsika Rao Garugula · AI/ML Engineer | Agentic AI, RAG & Evaluation</title>
+  <meta name="description" content="Hamsika Rao Garugula is an AI/ML Engineer specializing in agentic AI, RAG systems, and rigorous LLM evaluation. M.S. in Artificial Intelligence. Building AI that ships, and proving it works." />
+  <meta name="keywords" content="AI Engineer, Machine Learning Engineer, Applied AI, Agentic AI, LLM, RAG, LangGraph, LLM Evaluation, Software Engineer AI ML, Python, PyTorch, MLOps" />
+  <meta name="author" content="Hamsika Rao Garugula" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hamsika Rao Garugula · AI/ML Engineer" />
+  <meta property="og:description" content="I build AI that ships, and prove it works. Agentic AI, RAG, and rigorous LLM evaluation." />
+  <meta property="og:url" content="https://hamsikarg.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%237C5CFF'/><text x='50' y='68' font-family='Space Grotesk,sans-serif' font-size='52' font-weight='700' fill='white' text-anchor='middle'>H</text></svg>" />
+
+  <!-- Structured data for recruiters / Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hamsika Rao Garugula",
+    "jobTitle": "AI/ML Engineer",
+    "email": "mailto:hamsikaraog@gmail.com",
+    "url": "https://hamsikarg.github.io",
+    "alumniOf": "University at Buffalo, SUNY",
+    "knowsAbout": ["Agentic AI", "Retrieval-Augmented Generation", "LLM Evaluation", "Machine Learning", "Deep Learning", "MLOps"],
+    "sameAs": [
+      "https://www.linkedin.com/in/hamsikarg/",
+      "https://github.com/HamsikaRaj"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Home">HG<span class="dot">.</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="assets/Hamsika_Rao_Garugula_Resume.pdf" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Resume</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <p class="hero__eyebrow reveal">AI / ML ENGINEER &nbsp;·&nbsp; LLM &nbsp;·&nbsp; RAG &nbsp;·&nbsp; AGENTIC AI</p>
+      <h1 class="hero__title reveal">
+        I build AI that <span class="grad">ships</span>,<br />
+        and prove it <span class="grad">works</span>.
+      </h1>
+      <p class="hero__sub reveal">
+        I hold every system to the numbers most demos skip: faithfulness, hallucination,
+        latency, and cost. If it can't be trusted in production, it isn't done.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+      <div class="hero__proof reveal">
+        <div class="proof">
+          <span class="proof__k">Agentic AI</span>
+          <span class="proof__lbl">Multi-agent pipelines with typed handoffs and guardrails</span>
+        </div>
+        <div class="proof">
+          <span class="proof__k">RAG</span>
+          <span class="proof__lbl">Retrieval that's grounded, secured, and tuned</span>
+        </div>
+        <div class="proof">
+          <span class="proof__k">Evaluation</span>
+          <span class="proof__lbl">LLM-as-judge, eval gates, and honest metrics</span>
+        </div>
+        <div class="proof">
+          <span class="proof__k">Production</span>
+          <span class="proof__lbl">Cost, latency, and reliability built in from day one</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__grid">
+        <div class="about__main">
+          <div class="about__head reveal">
+            <span class="kicker">01 · About</span>
+            <h2 class="section__title">The engineer behind the systems</h2>
+          </div>
+          <div class="about__body reveal">
+          <p>I'm <strong>Hamsika</strong>, an AI/ML Engineer with an M.S. in Artificial Intelligence from the University at Buffalo. I work at the intersection of <strong>applied AI and engineering discipline</strong>, building agentic pipelines, RAG systems, and ML models, then subjecting them to the kind of evaluation most demos skip.</p>
+          <p>My edge is <strong>evaluation rigor</strong>. I've built an automated RAG evaluation harness that uses Claude as an LLM-judge to score faithfulness, relevancy, and hallucination at the claim level. I profile latency and cost per run, and I refuse to ship a system I can't measure. When a local model hallucinated on 100% of out-of-scope queries, I diagnosed it and drove fabricated responses to zero.</p>
+          <p>The way I build reflects that. I care as much about a system's <strong>cost per run, latency, and failure modes</strong> as its accuracy, because those are what decide whether it actually ships. I like typed contracts, guardrails, and eval gates that let a team move fast without breaking trust, and I would rather report an honest number than a flattering one.</p>
+          <p class="about__seeking">I'm looking for <strong>Applied AI, AI/ML Engineer, and SDE roles with an AI/ML focus</strong> at teams building real products. Authorized to work in the U.S. on F-1 OPT.</p>
+          </div>
+        </div>
+        <aside class="about__aside reveal">
+          <div class="about__photo">
+            <img src="assets/headshot.png" alt="Hamsika Rao Garugula" loading="lazy" />
+          </div>
+          <div class="card card--info">
+            <h3>At a glance</h3>
+            <ul class="facts">
+              <li><span>Degree</span><b>M.S. Artificial Intelligence</b></li>
+              <li><span>Base</span><b>New York, USA</b></li>
+              <li><span>Authorization</span><b>F-1 OPT</b></li>
+              <li><span>Published</span><b>Springer, ISDA 2023</b></li>
+            </ul>
+            <div class="about__links">
+              <a href="https://github.com/HamsikaRaj" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">GitHub</a>
+              <a href="https://www.linkedin.com/in/hamsikarg/" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">LinkedIn</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="about__head reveal">
+        <span class="kicker">02 · Selected Work</span>
+        <h2 class="section__title">Systems I've built &amp; measured</h2>
+        <p class="section__lead">My focus is LLM, RAG, and agentic systems. Each project below shows the problem, my role, the process, and the numbers. Click a card to expand the full case study.</p>
+      </div>
+
+      <div class="projects">
+
+        <!-- Project: Research-and-Report Agents -->
+        <article class="project reveal" data-project>
+          <div class="project__top">
+            <div>
+              <span class="project__tag">Agentic AI</span>
+              <h3 class="project__title">Research-and-Report Agents</h3>
+              <p class="project__oneline">A three-agent research system on the OpenAI Agents SDK with typed handoffs, guardrails, and an LLM-judge eval gate.</p>
+            </div>
+            <button class="project__toggle" aria-expanded="false" aria-label="Expand case study">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <ul class="project__stack">
+            <li>OpenAI Agents SDK</li><li>MCP</li><li>FastAPI</li><li>Guardrails</li><li>Pytest</li><li>SSE</li>
+          </ul>
+          <a class="project__repo" href="https://github.com/HamsikaRaj/research-report-agents" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>View code</a>
+          <div class="project__detail">
+            <div class="cs">
+              <div class="cs__block"><h4>Problem</h4><p>Research assistants that free-text their way to an answer are hard to trust and impossible to regression-test. I wanted typed contracts, grounded evidence, and an automated quality gate, so every change is provably not a regression.</p></div>
+              <div class="cs__block"><h4>My role</h4><p>Sole designer and engineer, covering agent architecture, the MCP server, guardrails, and the eval harness.</p></div>
+              <div class="cs__block"><h4>Process</h4><p>Built a three-agent pipeline on the OpenAI Agents SDK: a Planner delegates via typed handoffs, an Executor gathers grounded evidence through function tools and a custom MCP server, and a Reviewer returns a guardrail-checked, typed <code>ReportResult</code>. Added input/output guardrails, a custom tracing processor, and a golden-set eval harness behind a pytest gate.</p></div>
+              <div class="cs__block"><h4>Solution &amp; impact</h4><ul>
+                <li>Typed handoffs and a typed <b>ReportResult</b> make the pipeline's contracts explicit and testable end-to-end.</li>
+                <li>Input/output guardrails enforce <b>PII redaction and groundedness</b> before any output ships.</li>
+                <li>A golden-set <b>LLM-judge eval runs behind a pytest regression gate</b>, so quality drops fail CI instead of reaching users.</li>
+                <li>Streams token-by-token over both a CLI and an SSE endpoint, with a custom tracing processor for tokens and latency.</li>
+              </ul></div>
+              <div class="cs__block"><h4>What I learned</h4><p>Typed contracts plus an automated eval gate turn an agent from a demo into something you can safely change. The guardrails and regression gate are what make fast iteration possible without breaking trust.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project: Multi-Agent Coding Assistant -->
+        <article class="project reveal" data-project>
+          <div class="project__top">
+            <div>
+              <span class="project__tag">Agentic AI</span>
+              <h3 class="project__title">Multi-Agent Coding Assistant</h3>
+              <p class="project__oneline">Five specialized Claude agents that turn one prompt into a reviewed, multi-file codebase.</p>
+            </div>
+            <button class="project__toggle" aria-expanded="false" aria-label="Expand case study">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <ul class="project__stack">
+            <li>Python</li><li>LangGraph</li><li>FastAPI</li><li>Anthropic API</li><li>React</li><li>TypeScript</li><li>SSE</li>
+          </ul>
+          <a class="project__repo" href="https://github.com/HamsikaRaj/multi-agent-coding-assistant" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>View code</a>
+          <div class="project__detail">
+            <div class="cs">
+              <div class="cs__block"><h4>Problem</h4><p>Turning a plain-English request into working software usually means one model doing everything, and quietly shipping broken code. I wanted a pipeline that plans, builds, and <em>reviews itself</em> before delivering.</p></div>
+              <div class="cs__block"><h4>My role</h4><p>Sole designer and engineer, covering architecture, agent orchestration, cost strategy, and the full-stack UI.</p></div>
+              <div class="cs__block"><h4>Process</h4><p>Built a 5-agent LangGraph pipeline (Planner → Architect → Coder → two independent Reviewers) with a self-correcting loop that returns failing code to the coder with specific feedback (up to 3 retries). Routed models by task to control cost and streamed per-agent telemetry over SSE.</p></div>
+              <div class="cs__block"><h4>Solution &amp; impact</h4><ul>
+                <li>Shipped a <b>25-file React/TypeScript app in a single run</b>, with the review loop catching and repairing broken output before it shipped.</li>
+                <li>Cut inference cost via per-task routing (Opus for generation ≈82% of cost, Sonnet for planning/review, where a full dual-reviewer cycle ran <b>$0.0007</b>), fronted by a Haiku intent classifier.</li>
+                <li>Telemetry surfaced the real bottleneck: <b>~8.7s coder vs ~1.5s reviewer</b>.</li>
+              </ul></div>
+              <div class="cs__block"><h4>What I learned</h4><p>Reliability in agentic systems comes from structure and feedback loops, not bigger models. Routing the right model to the right task beats defaulting to the most expensive one everywhere.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project reveal" data-project>
+          <div class="project__top">
+            <div>
+              <span class="project__tag">Evaluation</span>
+              <h3 class="project__title">RAG Evaluation Harness</h3>
+              <p class="project__oneline">Automated, claim-level evaluation of RAG pipelines using Claude as an LLM-judge.</p>
+            </div>
+            <button class="project__toggle" aria-expanded="false" aria-label="Expand case study">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <ul class="project__stack">
+            <li>Python</li><li>FastAPI</li><li>FAISS</li><li>Claude API</li><li>Sentence Transformers</li><li>Pydantic</li><li>Pytest</li>
+          </ul>
+          <a class="project__repo" href="https://github.com/HamsikaRaj/rag-eval-harness" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>View code</a>
+          <div class="project__detail">
+            <div class="cs">
+              <div class="cs__block"><h4>Problem</h4><p>Retrieval metrics tell you the right documents came back, not whether the answer was faithful or hallucinated. Manual scoring doesn't scale. RAG teams need automated, trustworthy evaluation.</p></div>
+              <div class="cs__block"><h4>My role</h4><p>Designer and engineer of the full harness: retrieval metrics, LLM-judge scoring, and the multi-backend gateway.</p></div>
+              <div class="cs__block"><h4>Process</h4><p>Used Claude as an LLM-judge to score faithfulness, answer relevancy, and hallucination at the claim level, and built a pluggable retrieval layer (FAISS, ChromaDB, Qdrant, Weaviate) behind a FastAPI gateway so cross-backend benchmarking is a one-config change.</p></div>
+              <div class="cs__block"><h4>Solution &amp; impact</h4><ul>
+                <li>Cut evaluation effort <b>~90%</b> vs. manual scoring.</li>
+                <li>On a 75-question benchmark: <b>faithfulness 0.996</b>, answer relevancy 0.82, hallucination 0.017 (98 claims verified, 0.98 grounding).</li>
+                <li>Retrieval: <b>Recall@5 0.87 / Recall@10 0.92</b>, MRR 0.75, NDCG@10 0.79.</li>
+              </ul></div>
+              <div class="cs__block"><h4>What I learned</h4><p>You can't improve what you can't measure. Building the eval harness first changes how you build the system. It turns "seems fine" into a number you can defend.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project reveal" data-project>
+          <div class="project__top">
+            <div>
+              <span class="project__tag">RAG · Security</span>
+              <h3 class="project__title">FinSolve: RAG with Role-Based Access Control</h3>
+              <p class="project__oneline">An internal RAG chatbot where access control is enforced at the vector-search level.</p>
+            </div>
+            <button class="project__toggle" aria-expanded="false" aria-label="Expand case study">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <ul class="project__stack">
+            <li>Python</li><li>FastAPI</li><li>Qdrant</li><li>Claude Sonnet</li><li>Sentence Transformers</li><li>JWT</li><li>Streamlit</li>
+          </ul>
+          <a class="project__repo" href="https://github.com/HamsikaRaj/FinSolve-RBAC-RAG" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>View code</a>
+          <div class="project__detail">
+            <div class="cs">
+              <div class="cs__block"><h4>Problem</h4><p>A finance employee should be able to ask about quarterly revenue, but should never see HR records. Prompt-level guardrails leak. Access control had to happen at retrieval, not in the prompt.</p></div>
+              <div class="cs__block"><h4>My role</h4><p>End-to-end designer: auth pipeline, ingestion, retrieval tuning, and adversarial testing.</p></div>
+              <div class="cs__block"><h4>Process</h4><p>Built a JWT auth pipeline deriving roles dynamically from a 100-person HR dataset, filtered retrieval by role/department in Qdrant, and pressure-tested it with adversarial queries.</p></div>
+              <div class="cs__block"><h4>Solution &amp; impact</h4><ul>
+                <li>Dual-layer RBAC across <b>6 role tiers and 5 department knowledge bases</b>, reaching <b>100% access-control accuracy, 0 hallucinations</b> across 16 adversarial tests.</li>
+                <li>Ingestion chunked 9 sources (~1,700 lines) into 225 metadata-tagged vectors, with retrieval tuned to sub-second RBAC-filtered results.</li>
+                <li>Replaced a 1.2B local Llama 3.2 model that hallucinated on 100% of out-of-scope queries with Claude Sonnet, driving <b>fabricated responses to zero</b>.</li>
+              </ul></div>
+              <div class="cs__block"><h4>What I learned</h4><p>Security in AI systems is an architecture decision. Enforcing it at the data layer is the difference between a demo and something an enterprise can actually deploy.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project: RL for Derivatives Markets -->
+        <article class="project reveal" data-project>
+          <div class="project__top">
+            <div>
+              <span class="project__tag">Reinforcement Learning</span>
+              <h3 class="project__title">RL for Derivatives Markets</h3>
+              <p class="project__oneline">A DDQN agent trained in a custom Gym environment to trade options.</p>
+            </div>
+            <button class="project__toggle" aria-expanded="false" aria-label="Expand case study">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <ul class="project__stack">
+            <li>Python</li><li>PyTorch</li><li>OpenAI Gym</li><li>DDQN</li><li>Scikit-learn</li>
+          </ul>
+          <a class="project__repo" href="https://github.com/HamsikaRaj/rl-options-trading" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>View code</a>
+          <div class="project__detail">
+            <div class="cs">
+              <div class="cs__block"><h4>Problem</h4><p>Can a reinforcement-learning agent learn a profitable, stable trading policy on real options data, without reward-hacking its way to a meaningless score?</p></div>
+              <div class="cs__block"><h4>My role</h4><p>Independent researcher and engineer, covering environment design, reward shaping, and agent training.</p></div>
+              <div class="cs__block"><h4>Process</h4><p>Engineered a custom Gym environment with a 5-dimensional state space and a hand-designed reward function, then built and tuned a DDQN agent with prioritized experience replay on NVDA call-option data.</p></div>
+              <div class="cs__block"><h4>Solution &amp; impact</h4><ul>
+                <li>Improved reward from near-zero to a <b>600+ moving average</b> over 900 episodes.</li>
+                <li>Achieved <b>15% ROI</b> with zero major drawdowns and 800-step test stability.</li>
+                <li>Diagnosed and fixed early reward-hacking behavior caused by naive reward shaping.</li>
+              </ul></div>
+              <div class="cs__block"><h4>What I learned</h4><p>The reward function <em>is</em> the specification. Most of the real work in RL is catching the ways an agent will exploit exactly what you asked for instead of what you meant.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project: VARLite -->
+        <article class="project reveal" data-project>
+          <div class="project__top">
+            <div>
+              <span class="project__tag">Computer Vision</span>
+              <h3 class="project__title">VARLite: Real-Time Offside Detection</h3>
+              <p class="project__oneline">A YOLOv8-based CV system that calls offside in real time on consumer GPUs.</p>
+            </div>
+            <button class="project__toggle" aria-expanded="false" aria-label="Expand case study">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <ul class="project__stack">
+            <li>Python</li><li>YOLOv8n</li><li>OpenCV</li><li>NumPy</li>
+          </ul>
+          <a class="project__repo" href="https://github.com/HamsikaRaj/VARLite" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>View code</a>
+          <div class="project__detail">
+            <div class="cs">
+              <div class="cs__block"><h4>Problem</h4><p>Offside decisions need speed and geometric precision, and both are hard to get on a real-time video feed without expensive hardware.</p></div>
+              <div class="cs__block"><h4>My role</h4><p>Designer and engineer of the full vision pipeline.</p></div>
+              <div class="cs__block"><h4>Process</h4><p>Fine-tuned YOLOv8n with SVD-based vanishing-point perspective correction and built multi-threaded video pipelines with geometric reconstruction and HSV-based team classification.</p></div>
+              <div class="cs__block"><h4>Solution &amp; impact</h4><ul>
+                <li><b>&gt;20 FPS and 95% detection accuracy</b> on consumer GPUs.</li>
+                <li>Boosted offside-call precision by <b>32%</b>.</li>
+              </ul></div>
+              <div class="cs__block"><h4>What I learned</h4><p>Classical geometry and modern detection are complementary. Perspective correction did as much for accuracy as the model itself.</p></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="about__head reveal">
+        <span class="kicker">03 · Experience</span>
+        <h2 class="section__title">Where I've shipped</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl reveal">
+          <div class="tl__meta"><span class="tl__date">Feb 2026 – Present</span><span class="tl__co">Saayam for All</span></div>
+          <div class="tl__body">
+            <h3>Data Engineer</h3>
+            <ul>
+              <li>Built a routing layer using a zero-shot classifier (BART-large-MNLI) to dispatch requests across <b>4 LLM providers</b> by intent (Jobs, Education, Finance), a multi-model assistant spanning Meta AI, Gemini, ChatGPT, and Grok.</li>
+              <li>Built a real-time LLM monitoring pipeline tracking latency, throughput, and resource use, and root-caused an <b>18× latency variance</b> and <b>30× throughput gap</b> across providers.</li>
+              <li>Shipped a JS frontend with live per-model performance metrics and real-time Markdown rendering.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl reveal">
+          <div class="tl__meta"><span class="tl__date">Jun 2023 – Aug 2023</span><span class="tl__co">L&amp;T Technology Services</span></div>
+          <div class="tl__body">
+            <h3>AI &amp; ML Engineer</h3>
+            <ul>
+              <li>Engineered a production OCR pipeline across <b>18+ regional plate formats</b>, reaching 85% format compatibility and <b>25% lower error rates</b> at 300+ DPI.</li>
+              <li>Optimized the image-preprocessing stack (normalization, skew correction, noise removal) for a <b>30% accuracy gain</b>.</li>
+              <li>Curated and validated datasets for <b>BMW ADAS</b> computer-vision training, improving detection precision on safety-critical tasks.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl reveal">
+          <div class="tl__meta"><span class="tl__date">Jul 2022 – Mar 2023</span><span class="tl__co">Kleza Solutions</span></div>
+          <div class="tl__body">
+            <h3>Software Engineer</h3>
+            <ul>
+              <li>Architected RESTful microservices for a healthcare Care Assessment App (Spring Boot + PostgreSQL + MongoDB), cutting API response times by <b>50%</b>.</li>
+              <li>Deployed a production XGBoost system for real-time clinical risk stratification, enabling automated high-risk patient flagging.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl reveal">
+          <div class="tl__meta"><span class="tl__date">Aug 2024 – May 2026</span><span class="tl__co">University at Buffalo, SUNY</span></div>
+          <div class="tl__body">
+            <h3>M.S. Artificial Intelligence</h3>
+            <ul>
+              <li>Graduate study in machine learning, deep learning, NLP, and reinforcement learning, the foundation for the systems in the work above.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl reveal">
+          <div class="tl__meta"><span class="tl__date">Dec 2020 – May 2024</span><span class="tl__co">Chaitanya Bharathi Institute of Technology</span></div>
+          <div class="tl__body">
+            <h3>B.E. Electronics &amp; Communication Engineering</h3>
+            <ul>
+              <li>Undergraduate degree in Hyderabad, India, where I built my foundation in signals, systems, and programming.</li>
+              <li>Published: <a href="https://doi.org/10.1007/978-3-031-64776-5_31" target="_blank" rel="noopener">Survey on Antennas for Different Cancers and Tumor Detection</a>, ISDA 2023, Springer.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="about__head reveal">
+        <span class="kicker">04 · Skills</span>
+        <h2 class="section__title">The toolkit</h2>
+        <p class="section__lead">Organized by how I actually use them, from the generative-AI stack I specialize in out to the data and cloud foundations that make systems production-ready.</p>
+      </div>
+      <div class="skills">
+        <div class="skillcard skillcard--feature reveal">
+          <h3>Generative AI &amp; Agents</h3>
+          <div class="tags">
+            <span>RAG</span><span>Agentic AI</span><span>Multi-Agent Orchestration</span><span>LangGraph</span><span>LangChain</span><span>LLM-as-Judge</span><span>RAGAS</span><span>Eval &amp; Benchmark Design</span><span>Hallucination Detection</span><span>ReAct</span><span>Prompt Engineering</span><span>Fine-Tuning</span><span>MCP</span><span>Anthropic API</span><span>Gemini API</span><span>Groq</span>
+          </div>
+        </div>
+        <div class="skillcard reveal">
+          <h3>Machine Learning</h3>
+          <div class="tags">
+            <span>Deep Learning</span><span>Neural Networks</span><span>XGBoost</span><span>Gradient Boosting</span><span>Random Forests</span><span>SVMs</span><span>CNNs</span><span>RNNs / LSTM</span><span>Time Series</span><span>Feature Engineering</span><span>SMOTE</span><span>Hyperparameter Tuning</span>
+          </div>
+        </div>
+        <div class="skillcard reveal">
+          <h3>Reinforcement &amp; NLP</h3>
+          <div class="tags">
+            <span>DQN / DDQN</span><span>Prioritized Replay</span><span>Reward Design</span><span>Custom Gym Envs</span><span>Sentence Transformers</span><span>Word2Vec</span><span>Zero-Shot Classification</span><span>BART</span><span>NLTK</span>
+          </div>
+        </div>
+        <div class="skillcard reveal">
+          <h3>Languages &amp; Frameworks</h3>
+          <div class="tags">
+            <span>Python</span><span>SQL</span><span>TypeScript</span><span>JavaScript</span><span>Java (Spring Boot)</span><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Pydantic</span>
+          </div>
+        </div>
+        <div class="skillcard reveal">
+          <h3>Backend &amp; Infra</h3>
+          <div class="tags">
+            <span>FastAPI</span><span>Spring Boot</span><span>React</span><span>REST APIs</span><span>Microservices</span><span>SSE</span><span>JWT</span><span>RBAC</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span><span>Linux</span>
+          </div>
+        </div>
+        <div class="skillcard reveal">
+          <h3>Data &amp; Vector Stores</h3>
+          <div class="tags">
+            <span>Qdrant</span><span>ChromaDB</span><span>FAISS</span><span>Weaviate</span><span>PostgreSQL</span><span>MongoDB</span><span>Snowflake</span><span>Redis</span><span>Airflow</span><span>PySpark</span><span>Kafka</span><span>BigQuery</span>
+          </div>
+        </div>
+        <div class="skillcard reveal">
+          <h3>Cloud &amp; MLOps</h3>
+          <div class="tags">
+            <span>GCP (Vertex AI, BigQuery)</span><span>AWS (SageMaker, Lambda, EC2)</span><span>Azure (Databricks, Data Factory)</span><span>Weights &amp; Biases</span><span>Model Deployment</span><span>Monitoring</span><span>Cost &amp; Latency Profiling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner reveal">
+      <span class="kicker">05 · Contact</span>
+      <h2 class="contact__title">Let's build something that works.</h2>
+      <p class="contact__lead">
+        I'm open to <strong>AI/ML Engineer, Applied AI, Agentic AI, and SDE (AI/ML)</strong> roles, and I'm happy to talk through any of the systems above in depth.
+        Whether you're hiring, collaborating, or just want to compare notes on evaluation, my inbox is open.
+      </p>
+      <div class="contact__actions">
+        <a href="mailto:hamsikaraog@gmail.com" class="btn btn--primary btn--lg">Email me</a>
+        <a href="https://www.linkedin.com/in/hamsikarg/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">LinkedIn</a>
+        <a href="assets/Hamsika_Rao_Garugula_Resume.pdf" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Download Résumé</a>
+      </div>
+      <p class="contact__email">hamsikaraog@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Hamsika Rao Garugula</span>
+      <div class="footer__links">
+        <a href="https://github.com/HamsikaRaj" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hamsikarg/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://doi.org/10.1007/978-3-031-64776-5_31" target="_blank" rel="noopener">Publication</a>
+        <a href="mailto:hamsikaraog@gmail.com">Email</a>
+      </div>
+      <span class="footer__built">Built from scratch · No template</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
